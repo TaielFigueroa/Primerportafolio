@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio 👓</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="main-header">
@@ -13,13 +14,14 @@
             <h2 class="MiNombre">Taiel Figueroa</h2>
         </a>
         <nav class="opciones">
-            <a href="" class="nav-link">Acerca de mi</a>
-            <a href="" class="nav-link">Conocimientos</a>
-            <a href="" class="nav-link">Contacto</a>
-            <a href="" class="nav-link">Redes</a>
+            <a href="#seccionuno" class="nav-link">Inicio</a>
+            <a href="#secciondos" class="nav-link">Acerca de mi</a>
+            <a href="#secciontres" class="nav-link">Conocimientos</a>
+            <a href="#seccioncuatro" class="nav-link">Contacto</a>
+            <a href="#seccionredes" class="nav-link">Redes</a>
         </nav>
     </header>
-    <section class="uno">
+    <section id="seccionuno" class="uno">
         <div class="caja-presentacion">
             <div class="imagenCara">
                 <img src="Cara.jpg" alt="">
@@ -31,7 +33,7 @@
             </div>    
         </div>
     </section>
-    <section class="dos">
+    <section id="secciondos" class="dos">
         <div class="TituloDos">
             <h1>Acerca de mí</h1>
         </div>
@@ -43,7 +45,7 @@
             </p>
         </div>
     </section>
-    <section class="tres">
+    <section id="secciontres" class="tres">
         <div class="TituloTres">
             <h2>Conocimientos</h2>
             <p>Estas son algunas de las tecnologías que tengo conocimientos:</p>
@@ -67,7 +69,30 @@
             </ul>
         </div>
     </section>
-    <footer class="redes">
+    <section id="seccioncuatro" class="cuatro">
+        <div class="Contacto">
+            <h2>Contacto</h2>
+        </div>
+        <div class="cajaContacto">
+            <div>
+                <input type="text" class="txtcontact" id="txtNombre" placeholder="Nombre...">
+            </div>
+            <div>
+                <input type="text" class="txtcontact" id="txtEmail" placeholder="Email...">
+            </div>
+            <div>
+                <input type="text" class="txtcontact" id="txtAsunto" placeholder="Asunto...">
+            </div>
+            <div>
+                <textarea name="Mensaje" id="Mensaje" class="Mensaje" placeholder="Mensaje..."></textarea>
+            </div>
+            <div>
+                <button class="btnEnviar" onclick="enviar()">Enviar</button>
+            </div>
+
+        </div>
+    </section>
+    <footer id="seccionredes" class="redes">
         <h2 class="tituloredes">Redes</h2>
         <div class="caja-redes">
             <a href="https://github.com/TaielFigueroa" target="_blank">
